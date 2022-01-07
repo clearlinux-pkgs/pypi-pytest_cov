@@ -4,7 +4,7 @@
 #
 Name     : pypi-pytest_cov
 Version  : 3.0.0
-Release  : 75
+Release  : 76
 URL      : https://files.pythonhosted.org/packages/61/41/e046526849972555928a6d31c2068410e47a31fb5ab0a77f868596811329/pytest-cov-3.0.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/61/41/e046526849972555928a6d31c2068410e47a31fb5ab0a77f868596811329/pytest-cov-3.0.0.tar.gz
 Summary  : Pytest plugin for measuring coverage.
@@ -13,23 +13,16 @@ License  : MIT
 Requires: pypi-pytest_cov-license = %{version}-%{release}
 Requires: pypi-pytest_cov-python = %{version}-%{release}
 Requires: pypi-pytest_cov-python3 = %{version}-%{release}
-BuildRequires : Sphinx
-BuildRequires : Sphinx-python
 BuildRequires : buildreq-distutils3
-Provides: pytest-cov
-Provides: pytest-cov-python
-Provides: pytest-cov-python3
-BuildRequires : coverage-python
-BuildRequires : pluggy
-BuildRequires : py-python
+BuildRequires : pypi(coverage)
 BuildRequires : pypi(pip)
+BuildRequires : pypi(pluggy)
+BuildRequires : pypi(py)
 BuildRequires : pypi(pytest)
 BuildRequires : pypi(setuptools)
 BuildRequires : pypi(six)
+BuildRequires : pypi(tox)
 BuildRequires : pypi(virtualenv)
-BuildRequires : pytest
-BuildRequires : tox
-BuildRequires : virtualenv
 
 %description
 Overview
@@ -60,11 +53,7 @@ Group: Default
 Requires: python3-core
 Provides: pypi(pytest_cov)
 Requires: pypi(coverage)
-Requires: pypi(pip)
 Requires: pypi(pytest)
-Requires: pypi(setuptools)
-Requires: pypi(six)
-Requires: pypi(virtualenv)
 
 %description python3
 python3 components for the pypi-pytest_cov package.
@@ -79,7 +68,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1641480407
+export SOURCE_DATE_EPOCH=1641520264
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$FFLAGS -fno-lto "
