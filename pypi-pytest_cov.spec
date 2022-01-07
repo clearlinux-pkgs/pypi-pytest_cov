@@ -23,7 +23,9 @@ BuildRequires : pypi(setuptools)
 BuildRequires : pypi(six)
 BuildRequires : pypi(tox)
 BuildRequires : pypi(virtualenv)
-
+Provides: pytest-cov
+Provides: pytest-cov-python
+Provides: pytest-cov-python3
 %description
 Overview
         ========
