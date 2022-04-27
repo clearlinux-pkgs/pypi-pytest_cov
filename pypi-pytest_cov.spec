@@ -4,7 +4,7 @@
 #
 Name     : pypi-pytest_cov
 Version  : 3.0.0
-Release  : 77
+Release  : 78
 URL      : https://files.pythonhosted.org/packages/61/41/e046526849972555928a6d31c2068410e47a31fb5ab0a77f868596811329/pytest-cov-3.0.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/61/41/e046526849972555928a6d31c2068410e47a31fb5ab0a77f868596811329/pytest-cov-3.0.0.tar.gz
 Summary  : Pytest plugin for measuring coverage.
@@ -16,16 +16,16 @@ Requires: pypi-pytest_cov-python3 = %{version}-%{release}
 BuildRequires : buildreq-distutils3
 BuildRequires : pypi(coverage)
 BuildRequires : pypi(pip)
-BuildRequires : pypi(pluggy)
 BuildRequires : pypi(py)
 BuildRequires : pypi(pytest)
 BuildRequires : pypi(setuptools)
 BuildRequires : pypi(six)
-BuildRequires : pypi(tox)
 BuildRequires : pypi(virtualenv)
-Provides: pytest-cov
-Provides: pytest-cov-python
-Provides: pytest-cov-python3
+BuildRequires : pypi-pluggy
+BuildRequires : pypi-pytest
+BuildRequires : pypi-tox
+BuildRequires : pypi-virtualenv
+
 %description
 Overview
         ========
@@ -70,7 +70,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1641520264
+export SOURCE_DATE_EPOCH=1651101750
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$FFLAGS -fno-lto "
