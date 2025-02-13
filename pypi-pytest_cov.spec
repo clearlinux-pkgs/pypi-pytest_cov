@@ -7,7 +7,7 @@
 #
 Name     : pypi-pytest_cov
 Version  : 6.0.0
-Release  : 93
+Release  : 94
 URL      : https://files.pythonhosted.org/packages/be/45/9b538de8cef30e17c7b45ef42f538a94889ed6a16f2387a6c89e73220651/pytest-cov-6.0.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/be/45/9b538de8cef30e17c7b45ef42f538a94889ed6a16f2387a6c89e73220651/pytest-cov-6.0.0.tar.gz
 Summary  : Pytest plugin for measuring coverage.
